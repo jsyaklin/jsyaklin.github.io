@@ -107,16 +107,17 @@
           <p class="block">Poppy was an antweight (&lt;1lb) combat robot that competed at the Robobrawl Fall 2023 Robot Day event at the University of Illinois Urbana-Champaign. As per competition rules, it was entirely 3D printed. It featured a full body spinner weapon supported by a custom 3D printed bearing. It ranked 7th out of 17 teams at Robot Day.</p>
           <p class="block">I was responsible for all the ideation, design, assembly, wiring, testing, and iterating for this project.</p>
           <div class="columns">
-            <div class="column is-one-third">
+            <div class="column">
               <figure class="image">
                 <img src="assets/poppy/poppy_top.jpg" alt="Poppy (combat robot)"></img>
               </figure>
             </div>
-            <div class="column is-one-third">
+            <div class="column">
               <figure class="image is-5by4">
                 <iframe class="has-ratio" src="https://www.youtube.com/embed/DlP0w4wDQww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
+            <div class="column is-hidden-touch"></div>
           </div>
           <p class="title">Development</p>
           <p class="block">I designed Poppy with focus on the following objectives:</p>
@@ -135,7 +136,7 @@
           <p class="block">
             The last major consideration was how to power the spinner. I planned to use a brushless motor I had on hand with a free speed at 12V of ~13000 RPM. 
             I wasn't concerned about low torque limiting the effectiveness of attacks, as energy would be stored in the weapon by its inertia. However, I still wanted a gear reduction so the weapon could spin up quickly.
-            I considered using high friction wheel to allow slip and prevent stalling of the motor, but I didn't want to have rolling friction lowering efficiency.
+            I considered using a high friction wheel to allow slip and prevent stalling of the motor, but I didn't want rolling friction lowering efficiency.
             I chose to attach a gear to the brushless motor and put internal gear teeth on the spinner. I decided if stalling became an issue, I could mount the pinion gear with a press fit onto the motor, allowing it to slip.
           </p>
           <p class="block">I designed the entire robot in PTC Onshape.</p>
