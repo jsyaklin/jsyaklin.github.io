@@ -45,7 +45,7 @@
           <span class="has-text-weight-semibold is-hidden-mobile">GitHub</span>
         </a>
       </p>
-      <p class="is-size-5-tablet">I am a mechanical engineering student with 6 years of practical experience in mechanical design, fabrication, electrical design, and embedded system programming for robotics.</p> <!--I learn new skills through projects so I can communicate across more disciplines and solve more complex problems.-->
+      <p class="is-size-5-tablet">I am a mechanical engineering student with 6 years of experience in mechanical design, fabrication, electrical design, and embedded system programming for robotics.</p> <!--I learn new skills through projects so I can communicate across more disciplines and solve more complex problems.-->
     </div>
   </section>
 
@@ -65,7 +65,7 @@
             </header>
             <div class="card-content">
               <figure class="image">
-                <img src="assets/poppy/poppy.png" alt="Poppy (combat robot)"/>
+                <img src="assets/poppy/poppy.jpg" alt="Poppy (combat robot)"/>
               </figure>
             </div>
           </div>
@@ -86,7 +86,7 @@
             </header>
             <div class="card-content">
               <figure class="image">
-                <img src="assets/nebula/nebula.png" alt="Nebula (CAD challenge robot)"/>
+                <img src="assets/nebula/nebula.jpg" alt="Nebula (CAD challenge robot)"/>
               </figure>
             </div>
           </div>
@@ -104,12 +104,41 @@
         </header>
         <div class="card-content">
           <p class="title">Overview</p>
-          <p>Poppy was an antweight (<1lb) combat robot that competed at the Robobrawl Fall 2023 Robot Day event at the University of Illinois Urbana-Champaign. As per competition rules, it was entirely 3D printed. It featured a full body spinner weapon supported by a custom 3D printed bearing. It ranked 7th out of 17 teams at Robot Day.</p>
-          <!-- <p class="title">Objectives</p>
-          <p>
-            - Maximize weapon angular momentum
-            - Maximize weapon perimeter
-          </p> -->
+          <p class="block">Poppy was an antweight (&lt;1lb) combat robot that competed at the Robobrawl Fall 2023 Robot Day event at the University of Illinois Urbana-Champaign. As per competition rules, it was entirely 3D printed. It featured a full body spinner weapon supported by a custom 3D printed bearing. It ranked 7th out of 17 teams at Robot Day.</p>
+          <p class="block">I was responsible for all the ideation, design, assembly, wiring, testing, and iterating for this project.</p>
+          <div class="columns">
+            <div class="column is-one-third">
+              <figure class="image">
+                <img src="assets/poppy/poppy_top.jpg" alt="Poppy (combat robot)"></img>
+              </figure>
+            </div>
+            <div class="column is-one-third">
+              <figure class="image is-5by4">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/DlP0w4wDQww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+          </div>
+          <p class="title">Development</p>
+          <p class="block">I designed Poppy with focus on the following objectives:</p>
+          <ul class="block">
+            <li>Maximize weapon angular momentum</li>
+            <li>Maximize weapon perimeter</li>
+            <li>Maximize weapon load capacity</li>
+            <li>Enable driving while inverted</li>
+          </ul>
+          <p class="block">I chose the full body spinner design because it seemed best suited to maximizing inertia and attack perimeter over other weapon types. Also, I could make the spinner thinner than the wheel diameter to enable driving upside down.</p>
+          <p class="block">My first concept for supporting the spinner was 4-8 radial bearings mounted around the edge of the chassis. These would roll in a groove on the inside rim of the spinner.
+            I noticed the mounting points for the bearings would need to be thin to avoid interfering with the spinner, and that the bearings would greatly reduce space available for electronics.
+            My second concept was to put small rounded grooves around the outside of the chassis and the inside of the spinner, and to fill the grooves with off-the-shelf small plastic balls, forming a custom radial bearing.
+            This design was more space efficient and distributed stress across more points.
+          </p>
+          <p class="block">
+            The last major consideration was how to power the spinner. I planned to use a brushless motor I had on hand with a free speed at 12V of ~13000 RPM. 
+            I wasn't concerned about low torque limiting the effectiveness of attacks, as energy would be stored in the weapon by its inertia. However, I still wanted a gear reduction so the weapon could spin up quickly.
+            I considered using high friction wheel to allow slip and prevent stalling of the motor, but I didn't want to have rolling friction lowering efficiency.
+            I chose to attach a gear to the brushless motor and put internal gear teeth on the spinner. I decided if stalling became an issue, I could mount the pinion gear with a press fit onto the motor, allowing it to slip.
+          </p>
+          <p class="block">I designed the entire robot in PTC Onshape.</p>
         </div>
       </div>
     </div>
