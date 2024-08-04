@@ -45,7 +45,7 @@
           <span class="has-text-weight-semibold is-hidden-mobile">GitHub</span>
         </a>
       </p>
-      <p class="is-size-5-tablet">I am a mechanical engineering student with 6 years of experience in mechanical design, fabrication, electrical design, and embedded system programming for robotics.</p> <!--I learn new skills through projects so I can communicate across more disciplines and solve more complex problems.-->
+      <p class="is-size-5-tablet">I am a mechanical engineering student with 6 years of experience in mechanical design, fabrication, electrical design, and embedded system development for robotics.</p>
     </div>
   </section>
 
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="column is-one-third">
-          <div class="card is-shady">
+          <div class="card js-modal-trigger is-shady" data-target="nebula-modal">
             <header class="card-header">
               <p class="card-header-title">Nebula</p>
               <div class="tags mr-4 my-3">
@@ -105,7 +105,7 @@
         <div class="card-content">
           <p class="title">Overview</p>
           <p class="block">Poppy was an antweight (&lt;1lb) combat robot that competed at the Robobrawl Fall 2023 Robot Day event at the University of Illinois Urbana-Champaign. As per competition rules, it was entirely 3D printed. It featured a full body spinner weapon supported by a custom 3D printed bearing. It ranked 7th out of 17 teams at Robot Day.</p>
-          <p class="block">I was responsible for all the ideation, design, assembly, wiring, testing, and iterating for this project.</p>
+          <p class="block">I was responsible for all the ideation, design, assembly, wiring, testing, and iterating for this project. The lessons I learned from it translated directly to the development of my 2024 combat robot.</p>
           <div class="columns">
             <div class="column">
               <figure class="image">
@@ -117,9 +117,9 @@
                 <iframe class="has-ratio" src="https://www.youtube.com/embed/DlP0w4wDQww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
-            <div class="column is-hidden-touch"></div>
+            <div class="column is-3 is-hidden-touch"></div>
           </div>
-          <p class="title">Development</p>
+          <p class="title">Design</p>
           <p class="block">I designed Poppy with focus on the following objectives:</p>
           <ul class="block">
             <li>Maximize weapon angular momentum</li>
@@ -133,17 +133,233 @@
             My second concept was to put small rounded grooves around the outside of the chassis and the inside of the spinner, and to fill the grooves with off-the-shelf small plastic balls, forming a custom radial bearing.
             This design was more space efficient and distributed stress across more points.
           </p>
+          <div class="columns">
+            <!-- <div class="column">
+              <figure class="image">
+                <img src="assets/poppy/bearing_top.jpg" alt="Bearing top"></img>
+              </figure>
+            </div> -->
+            <div class="column">
+              <figure class="image">
+                <img src="assets/poppy/bearing_section.jpg" alt="Bearing cross section"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch"></div>
+          </div> 
           <p class="block">
             The last major consideration was how to power the spinner. I planned to use a brushless motor I had on hand with a free speed at 12V of ~13000 RPM. 
             I wasn't concerned about low torque limiting the effectiveness of attacks, as energy would be stored in the weapon by its inertia. However, I still wanted a gear reduction so the weapon could spin up quickly.
-            I considered using a high friction wheel to allow slip and prevent stalling of the motor, but I didn't want rolling friction lowering efficiency.
+            I considered powering the spinner with a high friction wheel to allow slip and prevent stalling of the motor, but I didn't want rolling friction lowering efficiency.
             I chose to attach a gear to the brushless motor and put internal gear teeth on the spinner. I decided if stalling became an issue, I could mount the pinion gear with a press fit onto the motor, allowing it to slip.
           </p>
-          <p class="block">I designed the entire robot in PTC Onshape.</p>
+          <p class="block">I modeled the robot in PTC Onshape. I tracked the weight of every part with estimates from 3D printer slicing software and Onshape's mass properties tool to ensure compliance with the &lt;1lb limit. I printed all the parts through a university print service, and I ordered acetal balls for the bearing from McMaster-Carr. I chose acetal over steel, as steel would wear away the 3D printed parts. I chose acetal over other plastics for its wear resistance and low friction.</p>
+          <p class="block">Next, I assembled the drive train. I soldered the receiver/drive ESC module, brushless ESC, power switch, and motors. My robot matched the base configuration for the transmitter I was using, so I was able to test it right away.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-5by3">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/6knPHpN9J54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch"></div>
+          </div>
+          <p class="block">
+            Next, I assembled the spinner. I loaded the balls into the bearing one at a time through a hole in the side, then I plugged the hole with a screw.
+            The balls did not pass smoothly over the material near the screw hole, in part due to the way holes distort when printed horizontally by FDM printers. 
+            I disassembled and reassembled the spinner several times to tweak the print. This process resulted in plastic balls being scattered around my dorm, which I continually found while cleaning for the rest of the year.
+          </p>
+          <p class="block">
+            At first, the spinner had too much friction to start when powered. 
+            With the help of a fellow competitor and their Arduino-based brushless ESC interface, I changed the firmware of the ESC to disable a safety feature that limits power on startup.
+            I also printed new pinion gears with progressively more clearance around the teeth to trade friction for backlash. I settled on a high clearance gear, as I found backlash didn't negatively affect performance. 
+            Finally, I attached some large nuts and washers to the spinner to act as impactors and increase inertia. I originally planned to use custom steel plates, but I preferred the lower cost of miscellaneous hardware.
+            All of these changes significantly improved the weapon's spinup time and capacity to deal damage.
+          </p>
+          <p class="title">Takeaways</p>
+          <p class="block">
+            At Robot Day, Poppy had a record of 1 win and 2 losses. In its first match, it was thrown outside the arena wall by a vertical spinner.
+            In its last two matches, it dealt major damage and ran out the clock on its opponents, but it suffered from a lack of control.
+            Gyroscopic effects from the spinner caused it to tilt and hit the ground. The drive train struggled to move in straight lines.
+            I compensated for this by slowing the spinner while driving, which limited the damage it could deal.
+          </p>
+          <p class="block">At one point, the impactors loosened from vibrations and fell off. At another point, the treads were forced off the off-the-shelf wheels I used on the drive train.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/poppy/failed_tread.jpg" alt="Tread falling off a wheel"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch"></div>
+            <div class="column is-hidden-mobile"></div>
+          </div> 
+          <p class="block">However, these were Poppy's only mechanical failures. A few lines of plastic on the outside of the spinner were delaminated, but the chassis, custom bearing, gears, and electronics were completely undamaged. Also, the robot effortlessly drove upside down, which was useful on several occasions.</p>
+          <p class="block">I resolved to address all of Poppy's shortcomings with a new robot for 2024. 
+            The new robot had 2 counter-rotating weapons to cancel gyroscopic forces, a custom programmable PCB to provide a slew of performance and quality of life improvements, magnets to increase traction, and superglued wheel treads.</p>
         </div>
       </div>
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div id="nebula-modal" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Nebula</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">
+            Nebula was a robot concept created for GSCC, a CAD competition hosted by <span class="is-italic">FIRST</span> Tech Challenge team 7974. 
+            I designed it in PTC Onshape, rendered it using Blender, and wrote a press release for it, all within a 1 week time limit. 
+            Nebula ranked 1st out of 14 entries, earning a $275 prize.
+          </p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/nebula.jpg" alt="Nebula (robot CAD concept)"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/back.jpg" alt="Nebula (robot CAD concept) back view"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-3"></div>
+          </div>
+          <p class="title">Design</p>
+          <p class="block">The challenge was to design a robot to collect foam cubes two at a time from the corners 
+            of the field shown below and stack them in the center structure as quickly as possible. The robot was to climb
+            to the top of one of the ramps on the corners of the field. The robot was to follow all the generic build rules 
+            from the <span class="is-italic">FIRST</span> Tech Challenge program, which include limits on choices of electronics suppliers, a maximum of 8 12V DC motors per robot, and a requirement 
+            for the robot to fit in an 18" sizing cube when retracted.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/field.jpg" alt="GSCC competition playing field"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-4"></div>
+          </div>
+          <p class="block">Entries to the challenge were to be judged based on the following rubric:</p>
+          <ul class="block">
+            <li>Innovation (25%)</li>
+            <li>Realism (25%)</li>
+            <li>Presentation (20%)</li>
+            <li>Aesthetic (15%)</li>
+            <li>Game Strategy (15%)</li>
+          </ul>
+          <p class="block">Since the rubric was subjective, I drew from my past experience competing in and judging 
+            CAD challenges to make more specific design requirements. I knew robots were generally assessed for realism assuming a best case scenario for real life execution, i.e. parts could have tight tolerances, and maintainability could be a low priority. I knew an "innovative" robot usually had one major mechanism unlike that of any other team. I knew an "aesthetic" robot usually had an elegant profile, a simple color scheme, and renders with lots of decals and textures.</p>
+          <p class="block">In similar past <span class="is-italic">FIRST</span> Tech Challenge seasons, most teams used counter-rotating wheels
+            to draw large cubes into their robots. I anticipated that most teams in the CAD challenge would do the same.
+            However, I noticed this design would waste energy in deforming the cubes and in idling the motors. I noticed since the cube locations on the field were consistent, I could rake the cubes into the robot with a horizontal linear actuator. The linear actuator would greatly reduce the driving distance for each scoring cycle. The only energy losses would be from friction in the linear actuator and between the cube and the ground.
+          </p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/rake.jpg" alt="Raking the cubes into the robot"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-4"></div>
+          </div>
+          <p class="block">Once the cubes were raked into the robot, a claw would grab them and pivot 
+            to reorient them into a stack. A vertical linear motion system would lift them into the air. 
+            Finally, the claw would drop them in the center of the field.</p>
+          <p class="block">Now that I had a robot concept, I created pencil sketches to solidify my understanding of it. 
+            I created a dimensioned layout sketch in Onshape to determine major locations and dimensions, and 
+            to ensure compliance with the 18" size limit. Finally, I modeled the entire robot in Onshape.</p>
+          <div class="columns">
+            <div class="column is-6">
+              <figure class="image">
+                <img src="assets/nebula/pencil_sketch.jpg" alt="Early pencil sketch"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/nebula/layout_sketch.jpg" alt="Layout sketch"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/nebula/cad_right.jpg" alt="Robot CAD profile"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">I designed the base of the claw with a miniature linear rail and a crank-slider linkage powered by a servo. The claw would drop a stack of cubes by quickly sliding the base out from under them.</p>
+          <div class="columns">
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/nebula/deposit_hold.jpg" alt="Holding the cubes"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/deposit_hold_2.jpg" alt="Holding the cubes (close up)"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/deposit_drop.jpg" alt="Dropping the cubes"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">I designed the horizontal and vertical extensions with aluminum drawer slides and a string and pulley system powering extension and retraction—a common design for <span class="is-italic">FIRST</span> Tech Challenge robots. I added a pair of deployable hooks to the horizontal extension to engage with the bar on the ramp and aid the drive train in climbing it.<p>
+            <div class="columns">
+              <div class="column is-7">
+                <figure class="image">
+                  <img src="assets/nebula/intake.jpg" alt="Horizontal extension"></img>
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image">
+                  <img src="assets/nebula/climb.jpg" alt="Climbing the ramp"></img>
+                </figure>
+              </div>
+            </div>
+          <p class="block">I designed the main cross member of the drive train with a pair of brake pads to hold the robot against pushes from opponents and to support the robot on the ramp. I used over-center linkages on the brake pads, so the supported weight wouldn't be reacted with torque from the driving servos.</p>
+          <div class="columns">
+            <div class="column is-6">
+              <figure class="image">
+                <img src="assets/nebula/brakes.jpg" alt="Brake pads"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/brakes_2.jpg" alt="Retracted brake pad"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/brakes_3.jpg" alt="Extended brake pad"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">To ensure the robot would be as fast as possible, I added a variety of power draw reduction features. I added constant force springs to counterbalance the vertical extension and standard extension springs to counterbalance the claw pivot. I used an over-center linkage to drive the claw, so the force from the clamped cubes wouldn't be reacted with torque from the driving servo. 
+          </p>
+          <p class="block">Next, I created a 6 page press release outlining the development and functionality of the robot. I made infographics and tables to facilitate the judges' understanding.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/press_release_3.jpg" alt="Press release"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/nebula/press_release_1.jpg" alt="Press release"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-mobile is-4">
+            </div>
+          </div>
+          <p class="block">I used Blender rendering software to make eye-catching photorealistic renders of the robot. With guidance from Jamie Kazemier, a Blender veteran and fellow <span class="is-italic">FIRST</span> alum, I improved my appearances for several off-the-shelf parts in Blender. I also improved my appearances for carbon fiber, aluminum, polycarbonate and 3D prints.</p>
+          <p class="title">Takeaways</p>
+          <p class="block">My submission earned first place out of 14 entries, scoring high in all judging categories.</p>
+          <p class="block">This CAD challenge was a fun opportunity for me to practice my mechanical design, CAD, problem solving, documentation, and 3D rendering skills. I explored new applications of over-center linkages and miniature linear rails, which I can apply to future projects. 
+          </p> 
+        </div>
+      </div>
+    </div>
   </div>
   <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script

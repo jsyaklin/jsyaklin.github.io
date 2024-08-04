@@ -16,3 +16,7 @@ li {
     list-style-type: disc;
     list-style-position: inside;
 }
+
+img, iframe {
+    border-radius: 10px;
+}
