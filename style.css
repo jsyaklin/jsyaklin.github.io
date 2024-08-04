@@ -17,6 +17,10 @@ li {
     list-style-position: inside;
 }
 
-img, iframe {
+img {
+    border-radius: 10px;
+}
+
+iframe {
     border-radius: 10px;
 }
