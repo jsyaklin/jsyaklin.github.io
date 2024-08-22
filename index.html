@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/aeb3bf2399.js" crossorigin="anonymous"></script>
-    <script src="modal-listen.js"></script>
   </head>
   <body>
   <section class="section">
@@ -49,13 +48,34 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" style="--bulma-section-padding:0rem 1.5rem; --bulma-section-padding-desktop:0rem 3rem;">
     <div class="container">
-      <div class="columns features is-multiline">
+      <div class="columns features is-multiline is-centered">
         <div class="column is-one-third">
-          <div class="card js-modal-trigger is-shady" data-target="poppy-modal">
+          <div class="card js-modal-trigger is-shady" data-target="ghosts">
             <header class="card-header">
-              <p class="card-header-title">Poppy</p>
+              <p class="card-header-title" style="white-space:nowrap">Ghosts</p>
+              <div class="tags mr-4 my-3">
+                <span class="tag is-light">2024</span>
+                <span class="tag is-light">Robot Combat</span>
+                <span class="tag is-light">Mechanical</span>
+                <span class="tag is-light">Electrical</span>
+                <span class="tag is-light">3D Printing</span>
+                <span class="tag is-light">Circuit Design</span>
+                <span class="tag is-light">Embedded Software</span>
+              </div>
+            </header>
+            <div class="card-content px-3 py-2">
+              <figure class="image">
+                <img src="assets/ghost/ghost.jpg" alt="Ghosts (combat robot)"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="card js-modal-trigger is-shady" data-target="poppy">
+            <header class="card-header">
+              <p class="card-header-title" style="white-space:nowrap">Poppy</p>
               <div class="tags mr-4 my-3">
                 <span class="tag is-light">2023</span>
                 <span class="tag is-light">Robot Combat</span>
@@ -63,7 +83,7 @@
                 <span class="tag is-light">3D Printing</span>
               </div>
             </header>
-            <div class="card-content">
+            <div class="card-content px-2 my-4">
               <figure class="image">
                 <img src="assets/poppy/poppy.jpg" alt="Poppy (combat robot)"/>
               </figure>
@@ -71,9 +91,9 @@
           </div>
         </div>
         <div class="column is-one-third">
-          <div class="card js-modal-trigger is-shady" data-target="nebula-modal">
+          <div class="card js-modal-trigger is-shady" data-target="nebula">
             <header class="card-header">
-              <p class="card-header-title">Nebula</p>
+              <p class="card-header-title" style="white-space:nowrap">Nebula</p>
               <div class="tags mr-4 my-3">
                 <span class="tag is-light">2023</span>
                 <span class="tag is-light">
@@ -84,7 +104,7 @@
                 <span class="tag is-light">Mechanical</span>
               </div>
             </header>
-            <div class="card-content">
+            <div class="card-content py-2 mx-2">
               <figure class="image">
                 <img src="assets/nebula/nebula.jpg" alt="Nebula (CAD challenge robot)"/>
               </figure>
@@ -92,10 +112,227 @@
           </div>
         </div>
       </div>
+      <div class="columns features is-multiline is-centered">
+        <div class="column is-3">
+          <div class="card js-modal-trigger is-shady" data-target="vision-1">
+            <header class="card-header">
+              <p class="card-header-title" style="white-space:nowrap">Vision V1</p>
+              <div class="tags mr-4 my-3">
+                <span class="tag is-light">2022</span>
+                <span class="tag is-light">
+                  <span class="is-italic">FIRST</span>
+                  <span>&nbsp;Robotics</span>
+                </span>
+                <span class="tag is-light">Team</span>
+                <span class="tag is-light">Mechanical</span>
+              </div>
+            </header>
+            <div class="card-content py-2">
+              <figure class="image">
+                <img src="assets/vision_1/vision_1.jpg" alt="Vision V1 (FIRST Tech Challenge robot)"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card js-modal-trigger is-shady" data-target="vision-2">
+            <header class="card-header">
+              <p class="card-header-title" style="white-space:nowrap">Vision V2</p>
+              <div class="tags mr-4 my-3">
+                <span class="tag is-light">2023</span>
+                <span class="tag is-light">
+                  <span class="is-italic">FIRST</span>
+                  <span>&nbsp;Robotics</span>
+                </span>
+                <span class="tag is-light">Team</span>
+                <span class="tag is-light">Mechanical</span>
+                <span class="tag is-light">Software</span>
+              </div>
+            </header>
+            <div class="card-content py-2 mx-4">
+              <figure class="image">
+                <img src="assets/vision_2/vision_2_2.jpg" alt="Vision V2 (FIRST Tech Challenge robot)"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns features is-multiline is-centered">
+        <div class="column is-one-third">
+          <div class="card js-modal-trigger is-shady" data-target="ultron-1">
+            <header class="card-header">
+              <p class="card-header-title" style="white-space:nowrap">Ultron V1</p>
+              <div class="tags mr-4 my-3">
+                <span class="tag is-light">2021</span>
+                <span class="tag is-light">
+                  <span class="is-italic">FIRST</span>
+                  <span>&nbsp;Robotics</span>
+                </span>
+                <span class="tag is-light">Team</span>
+                <span class="tag is-light">Mechanical</span>
+              </div>
+            </header>
+            <div class="card-content px-2 my-5">
+              <figure class="image">
+                <img src="assets/ultron_1/ultron_1.jpg" alt="Ultron V1 (FIRST Tech Challenge robot)"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="card js-modal-trigger is-shady" data-target="ultron-2">
+            <header class="card-header">
+              <p class="card-header-title" style="white-space:nowrap">Ultron V2</p>
+              <div class="tags mr-4 my-3">
+                <span class="tag is-light">2022</span>
+                <span class="tag is-light">
+                  <span class="is-italic">FIRST</span>
+                  <span>&nbsp;Robotics</span>
+                </span>
+                <span class="tag is-light">Team</span>
+                <span class="tag is-light">Mechanical</span>
+              </div>
+            </header>
+            <div class="card-content">
+              <figure class="image">
+                <img src="assets/ultron_2/ultron_2.jpg" alt="Ultron V2 (FIRST Tech Challenge robot)"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="card js-modal-trigger is-shady" data-target="ultron-3">
+            <header class="card-header">
+              <p class="card-header-title" style="white-space:nowrap">Ultron V3</p>
+              <div class="tags mr-4 my-3">
+                <span class="tag is-light">2022</span>
+                <span class="tag is-light">
+                  <span class="is-italic">FIRST</span>
+                  <span>&nbsp;Robotics</span>
+                </span>
+                <span class="tag is-light">Team</span>
+                <span class="tag is-light">Mechanical</span>
+              </div>
+            </header>
+            <div class="card-content py-1 mx-4">
+              <figure class="image">
+                <img src="assets/ultron_3/ultron_3.jpg" alt="Ultron V3 (FIRST Tech Challenge robot)"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </section>
 
-  <div id="poppy-modal" class="modal modal-fx-fadeInScale">
+  <div id="ghosts" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Ghosts</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">Ghosts is an antweight (&lt;1lb) combat robot that is to compete at Robobrawl Fall 2024 Robot Day at the University of Illinois Urbana-Champaign. As per competition rules, it is entirely 3D printed. It features two counter-rotating spinners driven by a single brushless motor. It has a custom PCB with an ATmega328PB microprocessor. The PCB includes motor controllers, an accelerometer, a 7 segment display, an SD card slot, and an array of voltage dividers for reading the battery level and 12V receiver outputs as 5V signals.</p>
+          <p class="block">I was responsible for all the design, assembly, wiring, testing, and iterating for this project. This was my first time designing a circuit board, and my first time programming an embedded system.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-3">
+                <img src="assets/ghost/ghost_bottom.jpg" alt="Ghosts (combat robot)"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ghost/pcb_1.jpg" alt="Custom PCB"></img>
+              </figure>
+            </div>
+            <div class="column is-3 is-hidden-touch"></div>
+          </div>
+          <p class="title">Electrical Design</p>
+          <p class="block">As a learning objective, I wanted to make a PCB to expand the functionality of the off-the-shelf receiver I was using. With guidance from Aidan Yaklin, an electrical and computer engineering student, I created a schematic for the board in KiCad. I had several ATmega328PB chips on hand, and he challenged me to include enough features to use all 27 I/O pins. I sourced components based on known parameters like motor current limits and electrical characteristics of the ATmega328PB.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ghost/schematic.jpg" alt="PCB schematic"></img>
+              </figure>
+            </div>
+            <div class="column is-3 is-hidden-touch"></div>
+          </div>
+          <p class="block">I also made a block diagram to visualize the functionality of the board more simply.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ghost/blocks.jpg" alt="Block diagram"></img>
+              </figure>
+            </div>
+            <div class="column is-3 is-hidden-touch"></div>
+          </div>
+          <p class="block">Next, I arranged the components on the board and routed all the connections. I used the manufacturer recommended minimums for most dimensional quantities such as trace widths, as I needed the board to be very small. I used the small traces for signal connections and much wider traces for most of the power connections. I mostly wasn't concerned with trace widths, as none of my traces were long enough to have significant resistance.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ghost/routing.jpg" alt="PCB routing"></img>
+              </figure>
+            </div>
+            <div class="column is-3 is-hidden-touch"></div>
+          </div>
+          <p class="block">Once I was satisfied with the PCB and it passed the design rule checker, I ordered it from OSH Park.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ghost/board_blank.jpg" alt="PCB"></img>
+              </figure>
+            </div>
+            <div class="column is-3 is-hidden-touch"></div>
+          </div>
+          <p class="block">Next, I assembled the board. This was a good test of my soldering skills, as there were so many small components. On my first attempt, I reversed the polarity of the battery connector on install, as I had labeled it incorrectly in the PCB design, and blew out the microcontroller. I tried removing the microcontroller by gently breaking its legs, but I ultimately ripped one of its pads out of the PCB, so I had to redo the entire assembly on one of my spare boards. This gave me an opportunity to make some improvements, like replacing the direct connections to the brushed motors with pin headers.</p>
+          <div class="columns">
+            <div class="column is-5">
+              <figure class="image">
+                <img src="assets/ghost/pcb_assembled.jpg" alt="Assembled PCB"></img>
+              </figure>
+            </div>
+            <div class="column is-6">
+              <figure class="image">
+                <img src="assets/ghost/pcb_assembled_2.jpg" alt="Assembled PCB"></img>
+              </figure>
+            </div>
+            <div class="column is-1 is-hidden-touch"></div>
+          </div>
+          <p class="block">Next, I programmed the microcontroller. Through this process, I learned to use Windows Subsystem for Linux to run AVRDUDE (AVR Downloader Uploader) and communicate with an AVR programmer through USB. I learned the fundamentals of embedded C, and I developed my understanding of binary and hexidecimal. I used the register descriptions in the ATmega328PB datasheet to understand and configure its timers and ADC. I used the timers to generate PWM signals for the brushed motors, brushless ESC, and 7 segment display, and to measure the PWM signals coming in from the receiver. I used the ADC to get the battery voltage, so I could display it.</p>
+          <p class="block">I set up I2C communication with the accelerometer, and I found the robot's orientation by taking the dot product of the accelerometer axes with their values when the robot was stationary and upright. I used the sign of this value to set the directions of the motors, so the robot would always drive towards a designated "front" and spin its weapons upward, even when flipped upside down.</p>
+          <p class="title">Mechanical Design</p>
+          <p class="block">I created the mechanical design for this robot with focus on the following objectives, which were informed by my experience with <a class="js-modal-changer" data-target="poppy">my previous combat robot</a>:</p>
+          <ul class="block">
+            <li>Minimize vibration and gyroscopic effects</li>
+            <li>Maximize weapon perimeter</li>
+            <li>Maximize wheel traction</li>
+            <li>Enable driving while inverted</li>
+          </ul>
+          <p class="block">To achieve a large weapon perimeter without gyroscopic forces, I made two counter-rotating rollers. To reduce cost and weight, I drove both rollers with a single motor. I used a branded silicone wristband from a <span class="italic">FIRST</span> Tech Challenge team to friction drive the second roller, as it was the right size, and I have a lot of extra wristbands if it breaks. I received permission from the team to use their brand on my robot.</p>
+          <p class="block">To achieve increased wheel traction, I made the robot as close to the 1lb weight limit as possible, and I put magnets extracted from old hard drives on the top and bottom, so the robot attracts to the steel floor.</p>
+          <p class="block">I designed the robot in PTC Onshape. I imported a CAD model of the circuit board from KiCad, so I could design the electronics enclosure around it.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ghost/ghost_cad.jpg" alt="Robot CAD"></img>
+              </figure>
+            </div>
+            <div class="column is-6 is-hidden-touch"></div>
+          </div>
+          <p class="block">Next, I 3D printed all the parts and assembled the robot. I designed the robot to be assembled in just a few minutes, aside from the screws in the rollers, as I need to be ready to repair the robot quickly if it breaks at an event.</p>
+          <p class="title">Takeaways</p>
+          <p class="block">This robot is a work in progress and has yet to undergo integration testing. Every individual key function of the circuit board works. My biggest concern is friction in the weapon drive system, as it is very loud at 12000 RPM. I am also concerned that the weapon rollers will split if impacted, as the layers are normal to the roller axes. To prevent this, I might try making flexible couplings to absorb impacts, testing different layer heights for better adhesion, using a "brick layer" approach to 3D printer slicing, or annealing the rollers.</p>
+          <p class="block">I will update this page in coming weeks with further developments.</p>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div id="poppy" class="modal modal-fx-fadeInScale">
     <div class="modal-background"></div>
     <div class="modal-content">
       <div class="card">
@@ -105,7 +342,7 @@
         <div class="card-content">
           <p class="title">Overview</p>
           <p class="block">Poppy was an antweight (&lt;1lb) combat robot that competed at the Robobrawl Fall 2023 Robot Day event at the University of Illinois Urbana-Champaign. As per competition rules, it was entirely 3D printed. It featured a full body spinner weapon supported by a custom 3D printed bearing. It ranked 7th out of 17 teams at Robot Day.</p>
-          <p class="block">I was responsible for all the ideation, design, assembly, wiring, testing, and iterating for this project. The lessons I learned from it translated directly to the development of my 2024 combat robot.</p>
+          <p class="block">I was responsible for all the ideation, design, assembly, wiring, testing, and iterating for this project. The lessons I learned from it translated directly to the development of my <a class="js-modal-changer" data-target="ghosts">2024 combat robot.</a></p>
           <div class="columns">
             <div class="column">
               <figure class="image">
@@ -114,7 +351,7 @@
             </div>
             <div class="column">
               <figure class="image is-5by4">
-                <iframe class="has-ratio" src="https://www.youtube.com/embed/DlP0w4wDQww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/DlP0w4wDQww?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
             <div class="column is-3 is-hidden-touch"></div>
@@ -134,11 +371,6 @@
             This design was more space efficient and distributed stress across more points.
           </p>
           <div class="columns">
-            <!-- <div class="column">
-              <figure class="image">
-                <img src="assets/poppy/bearing_top.jpg" alt="Bearing top"></img>
-              </figure>
-            </div> -->
             <div class="column">
               <figure class="image">
                 <img src="assets/poppy/bearing_section.jpg" alt="Bearing cross section"></img>
@@ -157,7 +389,7 @@
           <div class="columns">
             <div class="column">
               <figure class="image is-5by3">
-                <iframe class="has-ratio" src="https://www.youtube.com/embed/6knPHpN9J54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/6knPHpN9J54?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </figure>
             </div>
             <div class="column is-hidden-touch"></div>
@@ -178,7 +410,7 @@
           <p class="block">
             At Robot Day, Poppy had a record of 1 win and 2 losses. In its first match, it was thrown outside the arena wall by a vertical spinner.
             In its last two matches, it dealt major damage and ran out the clock on its opponents, but it suffered from a lack of control.
-            Gyroscopic effects from the spinner caused it to tilt and hit the ground. The drive train struggled to move in straight lines.
+            Gyroscopic effects and vibration from the unbalanced spinner, combined with slight rocking of the robot about its wheelbase, caused it to tilt and hit the ground. The drive train struggled to move in straight lines.
             I compensated for this by slowing the spinner while driving, which limited the damage it could deal.
           </p>
           <p class="block">At one point, the impactors loosened from vibrations and fell off. At another point, the treads were forced off the off-the-shelf wheels I used on the drive train.</p>
@@ -192,15 +424,14 @@
             <div class="column is-hidden-mobile"></div>
           </div> 
           <p class="block">However, these were Poppy's only mechanical failures. A few lines of plastic on the outside of the spinner were delaminated, but the chassis, custom bearing, gears, and electronics were completely undamaged. Also, the robot effortlessly drove upside down, which was useful on several occasions.</p>
-          <p class="block">I resolved to address all of Poppy's shortcomings with a new robot for 2024. 
-            The new robot had 2 counter-rotating weapons to cancel gyroscopic forces, a custom programmable PCB to provide a slew of performance and quality of life improvements, magnets to increase traction, and superglued wheel treads.</p>
+          <p class="block">I resolved to address all of Poppy's shortcomings with <a class="js-modal-changer" data-target="ghosts">a new robot for 2024.</a> The new robot had 2 counter-rotating weapons to cancel gyroscopic forces, a custom programmable PCB to provide a slew of performance and quality of life improvements, magnets to increase traction, and superglued wheel treads.</p>
         </div>
       </div>
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
 
-  <div id="nebula-modal" class="modal modal-fx-fadeInScale">
+  <div id="nebula" class="modal modal-fx-fadeInScale">
     <div class="modal-background"></div>
     <div class="modal-content">
       <div class="card">
@@ -231,7 +462,7 @@
           <p class="block">The challenge was to design a robot to collect foam cubes two at a time from the corners 
             of the field shown below and stack them in the center structure as quickly as possible. The robot was to climb
             to the top of one of the ramps on the corners of the field. The robot was to follow all the generic build rules 
-            from the <span class="is-italic">FIRST</span> Tech Challenge program, which include limits on choices of electronics suppliers, a maximum of 8 12V DC motors per robot, and a requirement 
+            from the <span class="is-italic">FIRST</span> Tech Challenge program, which include limits on choices of electronics suppliers, a maximum of 8 12V brushed DC motors per robot, and a requirement 
             for the robot to fit in an 18" sizing cube when retracted.</p>
           <div class="columns">
             <div class="column">
@@ -354,13 +585,644 @@
           </div>
           <p class="block">I used Blender rendering software to make eye-catching photorealistic renders of the robot. With guidance from Jamie Kazemier, a Blender veteran and fellow <span class="is-italic">FIRST</span> alum, I improved my appearances for several off-the-shelf parts in Blender. I also improved my appearances for carbon fiber, aluminum, polycarbonate and 3D prints.</p>
           <p class="title">Takeaways</p>
-          <p class="block">My submission earned first place out of 14 entries, scoring high in all judging categories.</p>
+          <p class="block">Nebula earned 1st place out of 14 entries, scoring high in all judging categories.</p>
           <p class="block">This CAD challenge was a fun opportunity for me to practice my mechanical design, CAD, problem solving, documentation, and 3D rendering skills. I explored new applications of over-center linkages and miniature linear rails, which I can apply to future projects. 
           </p> 
         </div>
       </div>
     </div>
+    <button class="modal-close is-large" aria-label="close"></button>
   </div>
+
+  <div id="vision-1" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Vision V1</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">
+            Vision V1 was the first robot made by <span class="is-italic">FIRST</span> Tech Challenge team 8813 for the 2022-2023 season, Power Play. 
+            I worked with a team of 3 designers and 3 programmers to bring it to life. I designed, built, tested, and iterated on the arm links and joints. I assisted in ideation, wiring, and testing for the entire robot. I also worked one-on-one with new members to help them learn CAD and design various subsystems.
+          </p>
+          <div class="columns">
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/vision_1/vision_1_side.jpg" alt="Vision (FIRST Tech Challenge robot)"></img>
+              </figure>
+            </div>
+            <div class="column is-8">
+              <figure class="image">
+                <img src="assets/vision_1/vision_1_long.jpg" alt="Vision (FIRST Tech Challenge robot)"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="title">Design</p>
+          <p class="block">In Power Play, robots competed to stack plastic cones onto varying heights of poles. Robots had to follow generic <span class="is-italic">FIRST</span> Tech Challenge build rules, which include limits on choices of electronics suppliers, a maximum of 8 12V brushed DC motors per robot, and a requirement for the robot to fit in an 18" sizing cube when retracted.</p>
+          <p class="block">For moving around the field, we created a holonomic drive train with omni wheels in a diamond pattern. We housed it inside a cake pan, so it would be round and wouldn't get caught on the poles on the field.</p>
+          <div class="columns">
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/vision_1/cake_1.jpg" alt="Cake pan drive train"></img>
+              </figure>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/vision_1/cake_2.jpg" alt="Cake pan drive train"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">For lifting cones, we created a 3 axis arm. We wanted to see how it compared to linear motion systems used by many other teams, and we thought its versatile range of motion could have strategic benefits. My main responsibility was designing the arm links and joints. All the arm motors were fixed at the base and drove their respective axes with timing belts to minimze inertia of the arm. I used carbon fiber tubes and clamps for the arm links to further minimize weight and to make lengths and belt tensions adjustable. I put rotary encoders directly on each joint, so each arm angle would be known regardless of potential slippage and backlash. I communicated with my teammate throughout the design process as they designed the motor assembly, so they could determine gear ratios and key dimensions.</p>
+          <p class="block">Once I had a basic arm, I tried making it lighter. It weighed 800g, with 80% of the weight coming from the joints. The tube clamps were all metal, as I was concerned they would split if FDM 3D printed. One of our sponsors kindly offered to print the clamps from nylon powder on a binder jetting printer. This change on all the upper arm joints saved 120g.</p>
+          <div class="columns">
+            <div class="column is-6">
+              <figure class="image">
+                <img src="assets/vision_1/clamp_evolution.jpg" alt="Clamp evolution"></img>
+              </figure>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/vision_1/clamps.jpg" alt="Nylon powder printed clamps"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">I also tried reducing weight from the claw, as small weight reductions made large reductions to the arm inertia. This was a big challenge, as we also wanted to add functionality to the claw, such as a sensor for automated grabbing.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-5by3">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/Krsscbj7eb4?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-4"></div>
+          </div>
+          <p class="title">Takeaways</p>
+          <p class="block">This robot taught me about many of the challenges of designing and controlling robotic arms. Small amounts of backlash resulted in large motions of the claw. Reducing backlash by increasing belt tension resulted in lower efficiency. Other gearing options with reduced backlash, such as cycloidal drives, were either expensive or difficult to manufacture. Low processor speeds resulted in sluggish PID controllers. Brushed DC motors lacked power density for the fast, responsive motion we were targeting.</p>
+          <p class="block">These issues, combined with the difficult experience of lightening the claw while improving its functionality, motivated us to consider <a class="js-modal-changer" data-target="vision-2">a redesign</a> with more long-term potential.</p>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div id="vision-2" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Vision V2</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">
+            Vision V2 was the second robot made by <span class="is-italic">FIRST</span> Tech Challenge team 8813 for the 2022-2023 season, Power Play. 
+            I worked with a team of 5 designers and 3 programmers to bring it to life. I designed, built, tested, and iterated on the lift, deposit, and drive train. I developed a state machine, PID controller, and motion profiler in Java to control various mechanisms. I also assisted in ideation, wiring, and testing for the entire robot.
+          </p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/vision_2/vision_2_extended.jpg" alt="Vision (FIRST Tech Challenge robot)"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image is-5by4">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/sB3dFO7Gum4?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-1"></div>
+          </div>
+          <p class="title">Design</p>
+          <p class="block">In Power Play, robots competed to stack plastic cones onto varying heights of poles. Robots had to follow generic <span class="is-italic">FIRST</span> Tech Challenge build rules, which include limits on choices of electronics suppliers, a maximum of 8 12V brushed DC motors per robot, and a requirement for the robot to fit in an 18" sizing cube when retracted.</p>
+          <p class="block">One of our top priorities for this robot was to have a high scoring autonomous mode. For the robot to score autonomously, it needed to know its location on the field to the nearest inch. Generally, robots can calculate their position if they have rotary encoders on their wheels, but this method is inaccurate if the wheels slip. I sought to track position more accurately by suspending extra unpowered wheels against the ground.</p>
+          <p class="block">My early design for an encoder wheel module was relatively large. The cheapest magnetic encoder with the resolution I needed had an unwieldy asymmetrical footprint.</p>
+          <div class="columns">
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/vision_2/odo_0.jpg" alt="Position tracking wheel V1"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">To solve this, I made a custom 3D printed unibody encoder wheel module that replaced the bottom half of the encoder case. My design was copied and modified into two open source designs, which became the gold standard for tracking wheels for teams around the world.</p>
+          <div class="columns">
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/odo_1.jpg" alt="Position tracking wheel V2"></img>
+              </figure>
+            </div>
+            <div class="column is-2">
+              <figure class="image">
+                <img src="assets/vision_2/odo_3.jpg" alt="Encoder disassembly"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/odo_4.jpg" alt="Encoder disassembly"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/odo_2.jpg" alt="Position tracking wheel V2"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">Once I had tracking wheels, I designed a drive train. My design was similar to the ones I made in previous seasons, with an array of flat parallel aluminum plates housing wheels, motors, and timing belts. I made some quality of life improvements to the old design, such as carving out the inside plates so the motors could be dropped out the bottom for maintenance. I incorporated mounting for a linear slide lift into the plates. I included servos with strings to raise and lower the tracking wheels, so the robot could easily drive over obstacles. I positioned the servos so the line of action of the string tension force would go through the servo axis when the wheel was retracted, minimizing current draw.</p>
+          <div class="columns">
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/vision_2/dt_2.jpg" alt="Drive train"></img>
+              </figure>
+            </div>
+            <div class="column is-7">
+              <figure class="image">
+                <img src="assets/vision_2/dt_1.jpg" alt="Drive train"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">Since the base of each goal on the field was conductive metal, the robot would discharge static through the aluminum plates whenever they contacted the goals, causing momentary disconnects. To solve this, I covered the plates in foam panels. I later replaced the foam with machined polycarbonate, as the foam was easily damaged.</p>
+          <p class="block">Next, I designed a linear motion system for lifting cones onto poles. I used a combination of linear rails, similar to those used on 3D printers, and aluminum drawer slides. I used the same style of timing belt and pulley rigging from <a class="js-modal-changer" data-target="ultron-3">one of our previous robots,</a> but I improved its efficiency by eliminating all power transmission stages leading up to the main drive pulley, aside from a low reduction planetary gearbox on the motor.</p>
+          <div class="columns">
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/lift_2.jpg" alt="Vertical linear motion system"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/lift_1.jpg" alt="Vertical linear motion system"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/lift_3.jpg" alt="Vertical linear motion system"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">This was one of the fastest lifts in the world for Power Play, as it was incredibly light and had so few parts in its power transmission and rigging. It underwent relatively few changes over the season, aside from getting a reinforced timing belt and extra screws to stop the linear rail from shearing off screws.</p>
+          <p class="block">The wiring for electronics moving on the lift, on the other hand, underwent many iterations. My first attempt was to attach the wires to a loose pivoting link. This mostly worked, but it had a large space claim, and the link sometimes got stuck at the ends of its range of motion or tried to pinch the wires. My second attempt was to form segmented cable track into an S shape, with the goal of the middle section of the S rolling out to the end as it extended. This mostly worked, but it had a large space claim, and the cable track sometimes got stuck on top of its guides. My final attempts, which worked much better, used semicircular wire loops tied at the top of each stage of the extension.</p>
+          <div class="columns">
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/lift_wire_1.jpg" alt="Lift wiring"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/lift_wire_2.jpg" alt="Lift wiring"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/lift_wire_3.jpg" alt="Lift wiring"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/vision_2/lift_wire_4.jpg" alt="Lift wiring"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">My next task was to design a mechanism to hold and release cones on the lift. At first, my goal was to use only 1 servo, which reoriented the cone and moved it outside the frame of the robot. I designed a cup shaped feature which supported the inside of the cone and pulled out from under it to release it. Later, I added a micro servo to improve grip. Later, I used a larger servo to make a more traditional claw, which gripped the rim of the cone.
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/vision_2/depo_1.jpg" alt="Deposit"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/vision_2/depo_3.jpg" alt="Deposit"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/vision_2/depo_4.jpg" alt="Deposit"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/vision_2/depo_5.jpg" alt="Deposit"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/vision_2/depo_6.jpg" alt="Deposit"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">Once we had a complete robot, I was tasked with programming a driver controlled mode for it. In <span class="is-italic">FIRST</span> Tech Challenge, all robots use an all-in-one control board which runs Android OS. Using Java, I developed a state machine to sequence all of the actions involved in scoring a cone. Each action would wait for various conditions (timers, sensor values, controller inputs) to be met before proceeding to the next action. I put IR range sensors on the claw and deposit, so they were almost completely automated. I also developed functions for PID control and motion profiling for motors. Motion profiles would ramp motor speeds at the start and end of various motions. This was particularly useful for the lift, as it would throw cones if it decelerated too quickly. Throughout the season, I made dozens of adjustments and optimizations in the driver controlled program based on slow motion video tests and feedback from drivers.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-5by3">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/I5BHPMBWTuE?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column is-5 is-hidden-touch"></div>
+          </div>
+          <p class="title">Takeaways</p>
+          <p class="block">Vision V2 was one of team 8813's most endurant robots. It played 52 matches, from local scrimmages to the World Championship, and ran for hours at a time through practice runs and outreach events. Its greatest weakness was its autonomous routine, which, despite our efforts in developing the tracking wheel system, struggled to reach and maintain positions. In retrospect, the horizontal actuator, which we made to minimize the robot's need to drive autonomously, multiplied heading error from the drive train. Also, we generally prioritized driver controlled development over autonomous development, which added to our struggle.</p>
+          <p class="block"></p>
+          <p class="title">Interview</p>
+          <p class="block">Before the state championship, my teammates and I filmed a 15 minute video interview explaining our robot and design process, so other teams could learn from our experience.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-5by3">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/X571LOOTkL0?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column is-5 is-hidden-touch"></div>
+          </div>
+          </p> 
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div id="ultron-1" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Ultron V1</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">
+            Ultron V1 was the first robot made by <span class="is-italic">FIRST</span> Tech Challenge team 8813 for the 2021-2022 season, Freight Frenzy. 
+            I worked with a team of 3 designers and 3 programmers to bring it to life. I designed, built, tested, and iterated on the lift and drive train. I also assisted in ideation, wiring, and testing for the entire robot.
+          </p>
+          <p class="block">After its last competition, Ultron V1 was ranked 1st in the world for driver controlled scoring and 5th in the world overall (including autonomous and driver controlled categories).
+          </p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_1/extended.jpg" alt="Ultron (FIRST Tech Challenge robot)"></img>
+              </figure>
+            </div>
+            <div class="column is-5">
+              <figure class="image is-5by4">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/MByfu8iV8xg?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-3"></div>
+          </div>
+          <p class="title">Design</p>
+          <p class="block">In Freight Frenzy, robots competed to traverse barriers (horizontal PVC pipes mounted low to the ground), collect freight (plastic balls and cubes), and score them into trays at varying heights. Robots had to follow generic <span class="is-italic">FIRST</span> Tech Challenge build rules, which include limits on choices of electronics suppliers, a maximum of 8 12V brushed DC motors per robot, and a requirement for the robot to fit in an 18" sizing cube when retracted.</p>
+          <p class="block">Before the Freight Frenzy game was released, I sought to make a modular holonomic drive train to facilitate rapid prototyping of game-specific mechanisms and to give the software team more time to develop computer vision and navigation systems. My first attempt was made by milling a 1/2" thick plastic sheet recycled from an old competition field into a pair of bars with repeating patterns of mounting holes and cutouts for drive belts.</p>
+          <div class="columns">
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/ultron_1/billet_3.jpg" alt="Plastic billet drive train"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/ultron_1/billet_1.jpg" alt="Plastic billet drive train"></img>
+              </figure>
+            </div>
+            <div class="column is-5">
+              <figure class="image">
+                <img src="assets/ultron_1/billet_2.jpg" alt="Plastic billet drive train"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">This drive train met most of its goals, but it had some shortcomings. The front-to-back spacing of the wheels was fixed for a given set of machined bars. Motor locations were restricted by availability of certain timing belt lengths. The motors occupied a lot of space in the center of the robot. Mechanisms could only be mounted if they matched the hole grid spacing. Also, most importantly, the recycled plastic was too flexible for the belts to maintain tension.</p>
+          <p class="block">My second attempt sought to address all these issues. I created 4 modules, each with a motor, wheel, and bevel gear pair, and mounted them to aluminum T-slot extrusions. The extrusions were much stiffer than the plastic bars, and they could be cut to different lengths to change the wheel spacing. Mechanisms could be mounted at numerous angles to the extrusions with sliding nuts. The bevel gears enabled the motors to fit parallel to the sides of the robot.</p>
+          <p class="block">I machined the gearbox frames from aluminum L bracket stock. I considered using U channel stock or rectangular tubing, but the pairs of L brackets gave me more fine control of the spacing between the inside faces of the gearbox.</p>
+          <div class="columns">
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/ultron_1/t_slot_1.jpg" alt="Aluminum T-slot drive train"></img>
+              </figure>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/ultron_1/t_slot_2.jpg" alt="Aluminum T-slot drive train"></img>
+              </figure>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/ultron_1/t_slot_3.jpg" alt="Aluminum T-slot drive train"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">The team used this drive train for several weeks of testing leading up to the game reveal. After the reveal, it became clear that it needed more ground clearance, as it got high centered on the field barriers.</p>
+          <p class="block">In light of this new information, I redesigned the gearbox frames with several improvements. I oriented the motors vertically to provide additional ground clearance.
+            I swapped the L brackets for rectangular tubing stock, as each motor would've needed to be mounted across both L brackets. Using rectangular tubes made the gearboxes stronger and easier to build.
+          </p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_1/box_tube_1.jpg" alt="Rectangular tubing gearbox"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-3"></div>
+            <div class="column is-hidden-mobile is-5"></div>
+          </div>
+          <p class="block">Next, I needed something to drop game elements into the field goals. I wanted the deposit to extend out the sides of the robot, as I determined from drive testing that this resulted in the fastest driving path. My first attempt was an arm that swung out the sides like a pendulum, as this was the simplest way to achieve the minimum required range of motion. I designed a 2 stage power transmission with a belt and bevel gear pair to place the motor inline with the arm support and to achieve the desired gear reduction. I used tab and slot joints to constrain the motor face mount, eliminating at least 6 pieces of mounting hardware.
+          <div class="columns">
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/ultron_1/pendulum_1.jpg" alt="Pendulum arm robot"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/ultron_1/pendulum_2.jpg" alt="Pendulum arm"></img>
+              </figure>
+            </div>
+            <div class="column is-5">
+              <figure class="image">
+                <img src="assets/ultron_1/pendulum_3.jpg" alt="Pendulum arm"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">This arm operated on the principle of a "virtual 4 bar," which uses a pulley bolted to the stationary base and a timing belt to keep the end effector always parallel to the ground.</p>
+          <p class="block">This arm was useful for early driver practice, comparing strategies, and testing integration of the intake and "birdhouse" deposit subsystems designed by my teammates. However, it left more to be desired in terms of range of motion, and its large circular space claim prevented anything from being mounted next to it, which seemed likely to stifle future developments.</p>
+          <p class="block">Our next design sought to solve all these issues. We wanted to combine a horizontal extension with increased travel and an independent vertical extension, which would allow the horizontal extension to clear obstacles mounted to the robot frame.</p>
+          <p class="block">As my teammate designed a linkage for horizontal extension, I designed a linear slide system for vertical extension. I used aluminum drawer slides, V-groove bearings, and a string powering extension—a common design for <span class="is-italic">FIRST</span> Tech Challenge robots. I did not include a second string to power retraction, as it would introduce complexity in maintaining equal tension in both strings, and as I expected the weight of the deposit to tension the extension string.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_1/dr4b.jpg" alt="Aluminum slides"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-3"></div>
+            <div class="column is-hidden-mobile is-4"></div>
+          </div>
+          <p class="block">The aluminum drawer slides bound up in several tests, likely because the two sets of slides were slightly misaligned. This failure mode resulted in the string losing tension and bunching up around the idler pulleys. I tried adding aluminum brackets to better constrain the slides. I later decided to redesign the lift entirely, as this failure mode was too catastrophic for even a small chance of it to be acceptable.</p>
+          <p class="block">My next design used steel linear rails, like those found on precision manufacturing equipment. These had lower friction than the drawer slides, as they had tighter tolerances and an internal track for bearings to circulate. Also, they were stiff enough that the horizontal extension could be cantilevered from a single set of slides.</p>
+          <div class="columns">
+            <div class="column is-5">
+              <figure class="image">
+                <img src="assets/ultron_1/dr4b_2.jpg" alt="Steel slides"></img>
+              </figure>
+            </div>
+            <div class="column is-5">
+              <figure class="image is-5by3">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/Gon-Y23Rvhw?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column is-hidden-mobile is-2"></div>
+          </div>
+          <p class="title">Takeaways</p>
+          <p class="block">After its last competition, this robot was ranked 1st in the world for driver controlled scoring and 5th in the world overall (including autonomous and driver controlled categories). However, we were not fully satisfied, as we saw an opportunity to make a faster robot by extending horizontally from the field wall. This would facilitate autonomous scoring by reducing the number of axes to localize with from three (x, y, and heading) to one (x). We explored this concept in <a class="js-modal-changer" data-target="ultron-2">our next robot.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div id="ultron-2" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Ultron V2</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">
+            Ultron V2 was the second robot made by <span class="is-italic">FIRST</span> Tech Challenge team 8813 for the 2021-2022 season, Freight Frenzy. 
+            I worked with a team of 3 designers and 3 programmers to bring it to life. I designed, built, tested, and iterated on the intake, drive train, and parts of the lift. I also assisted in ideation, wiring, and testing for the entire robot.
+          </p>
+          <p class="block">This redesign from <a class="js-modal-changer" data-target="ultron-1">V1</a> was motivated by two discoveries. First, we could reduce the complexity and failure modes in our autonomous scoring routine by using a linear extension to reach all the way from the field wall to the goal. Second, we could achieve this linear extension with minimal complexity by driving a tape measure attached to a stack of linear guides. 
+          </p>
+          <p class="block">The tape measure actuator design was never seen before in <span class="is-italic">FIRST</span> Tech Challenge, and went on to be adopted by other teams.</p>
+          </p>
+          <div class="columns">
+            <div class="column is-7">
+              <figure class="image">
+                <img src="assets/ultron_2/extended.jpg" alt="Ultron (FIRST Tech Challenge robot)"></img>
+              </figure>
+            </div>
+            <div class="column is-5">
+              <figure class="image is-5by4">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/PkvAh6TFufk?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+          </div>
+          <p class="title">Design</p>
+          <p class="block">In Freight Frenzy, robots competed to traverse barriers (horizontal PVC pipes mounted low to the ground), collect freight (plastic balls and cubes), and score them into trays at varying heights. Robots had to follow generic <span class="is-italic">FIRST</span> Tech Challenge build rules, which include limits on choices of electronics suppliers, a maximum of 8 12V brushed DC motors per robot, and a requirement for the robot to fit in an 18" sizing cube when retracted.</p>
+          <p class="block">This robot started with a proof-of-concept I built of a stack of linear guides attached to a tape measure.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_2/tape_2.jpg" alt="Tape measure extension"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_2/tape_1.jpg" alt="Tape measure extension"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-4"></div>
+          </div>
+          <p class="block">This prototype showed us that the tape measure comfortably supported the load we'd need for a powered actuator without buckling. Now, we needed a frame to support it and a wheel and motor to drive it.</p>
+          <p class="block">As one of my teammates designed the wheel assembly, I designed the frame and motor assembly. I used aluminum sheet to make mounting plates for aluminum T-slot rails. Then, for each iteration of the actuator, I compared its speed to two benchmarks: the free speed of the motor and speed of a comparable linear actuator powered by a string and pulley system.</p>
+          <p class="block">The following images show the 5 tape measure drive iterations we designed in CAD.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_2/extendo_full.jpg" alt="Tape measure extension"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">The following video highlights 3 iterations we built and tested.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image is-5by4">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/QAKNn_RM65s?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-6"></div>
+          </div>
+          <p class="block">The following table shows the test results compared to the benchmarks.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_2/table.jpg" alt="Table of speed comparisons between iterations" style="border-radius: 0px;"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-4"></div>
+          </div>
+          <p class="block">Once we had a deposit mechanism, I designed a new drive train. I placed the motors horizontally in the bottom of the robot to offset the high center of mass of the linear slides. I used parallel aluminum plates to position the wheels, motors, and timing belts. I used T-slot extrusions to provide future-proofed mounting for other mechanisms. I mounted the intake from V1 to one side, and a mirrored copy of it to the other side, so the robot could score without spinning around.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_2/dt.jpg" alt="Drive train"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_2/dt_2.jpg" alt="Drive train"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-3"></div>
+          </div>
+          <p class="block">Once we had a full robot, I designed numerous prototypes and optimizations for it. I mounted a limit switch to the linear actuator, so it could reset its position. I mounted an IR distance sensor to the side of the robot, so it could automatically guide itself towards the field wall. I put upholstery foam in the deposit bucket, so elements wouldn't bounce out of it. I replaced the aluminum drive train plates with steel ones to lower the robot's center of mass. I designed an outrigger driven by an over-center linkage to balance the robot in a test of ultra long-distance scoring.</p>
+          <p class="block">I redesigned the intake with a second set of flaps 3D printed from TPU elastomer to more reliably transfer elements into the deposit.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_2/intake.jpg" alt="Intake progression"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-5"></div>
+          </div>
+          <p class="block">I also tried replacing all the aluminum drawer slides on the deposit with lightweight linear rails like those used on precision manufacturing equipment. I designed and 3D printed connectors for the linear rails, and I redesigned and machined the deposit arm mount from aluminum sheet. My prototype showed the joints between the rails to be far too flexible for competition use, but it inspired me to make a minor weight optimization by replacing the last stage of drawer slides with a linear rail.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_2/mgns_1.jpg" alt="Linear rail stack"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_2/mgns_2.jpg" alt="Deposit with 1 linear rail"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="title">Takeaways</p>
+          <p class="block">Ultron V2 dominated both of its qualifying tournaments, going undefeated in elimination rounds. It had a rockier performance at its state championship, as some parts of the tape measure drive were deteriorating, but it helped the team win the Inspire Award, the highest honor in the <span class="is-italic">FIRST</span> Tech Challenge program, which highlights excellence in robot design, innovation, control systems, documentation, professional networking, outreach, and gracious professionalism.</p>
+          <p class="block">This robot succeeded in its goal of facilitating autonomous scoring. It scored a maximum of 4 elements in the game's 30 second autonomous period, an improvement of 3 elements over its predecessor. It was also faster on average in driver-controlled scoring, reaching 16 elements scored in 2 minutes, an improvement of 3 elements.</p>
+          <p class="block">However, it still had several issues. The intake sometimes picked up 2 elements autonomously and spent valuable time trying to eject the second element. If the second element stayed in the robot for too long, the robot incurred penalties. The deposit was inconsistent on lower levels of the goal, as it had to drop elements from a height. The robot could only score at a fixed distance from the goal, which made it vulnerable to defensive play from opponents. 
+          </p>
+          <p class="block">Also, we were running out of ways to improve the efficiency of the tape measure linear extension, and it wasn't as efficient as the string or timing belt riggings used by other teams. This was likely due to the force from the spring inside the tape measure, which was necessary to keep the tape from bunching up inside its casing. In retrospect, I could have counterbalanced the lift externally with another spring, but, at the time, we decided to explore a traditional belt and pulley rigging, as it was more tried-and-true, and we wanted to prioritize reliability for <a class="js-modal-changer" data-target="ultron-3">our next robot iteration</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div id="ultron-3" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Ultron V3</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">Ultron V3 was the third robot made by <span class="is-italic">FIRST</span> Tech Challenge team 8813 for the 2021-2022 season, Freight Frenzy. I worked with a team of 3 designers and 3 programmers to bring it to life. I designed, built, tested, and iterated on the intake, drive train, and secondary scoring mechanisms. I also assisted in ideation, wiring, and testing for the entire robot.</p>
+          <p class="block">This redesign from <a class="js-modal-changer" data-target="ultron-2">V2</a> was motivated by a goal of reaching elimination rounds at the <span class="is-italic">FIRST</span> World Championship. While V2 had delegated secondary scoring tasks to its alliance partners, we wanted to be an ideal alliance partner by specializing in them. We also wanted to improve adaptability and consistency in primary scoring tasks.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_3/extended.jpg" alt="Ultron (FIRST Tech Challenge robot)"></img>
+              </figure>
+            </div>
+            <div class="column is-5">
+              <figure class="image is-5by4">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/JKvOv0-8w2E?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-2"></div>
+          </div>
+          <p class="title">Design</p>
+          <p class="block">In Freight Frenzy, robots competed to traverse barriers (horizontal PVC pipes mounted low to the ground), collect freight (plastic balls and cubes), and score them into trays at varying heights. Robots also completed two secondary scoring tasks at the end of each match: placing a cap on top of the goal and spinning a turntable in the corner of the field. Robots had to follow generic <span class="is-italic">FIRST</span> Tech Challenge build rules, which include limits on choices of electronics suppliers, a maximum of 8 12V brushed DC motors per robot, and a requirement for the robot to fit in an 18" sizing cube when retracted.</p>
+          <p class="block">We had just 7 weeks between the State Championship and World Championship. Our first task was determining the overall robot layout. Our main specification was to reach sideways from the wall to the goal, as our previous robots had, so our experience from driving practice would carry over to the new robot. Our next specification was to place the intake directly in front of the deposit box, to eliminate transfer failures. Our next specification was to be able to reach up to 8 feet to grab the caps, so we could score them and rotate the turntable at the same time.</p>
+          <p class="block">The layout we chose to meet these specifications was a claw that extended linearly upward and pivoted to either side, with an intake to draw elements into the claw. We could use basic trigonometry to determine the extension and angle to score at any lateral distance from the goal.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_3/scoring_distance.jpg" alt="Scoring at multiple distances from the goal"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-3"></div>
+          </div>
+          <p class="block">My first design task was the drive train. I designed it with similar belts, pulleys, and parallel plates to the V2 drive train, as the V2 drive train had been very reliable. I shifted the motors to the back to accommodate the massive space claim of the pivoting deposit. I incorporated mounting for all mechanisms into the plates. I used a script in Onshape to generate tangent lines connecting most of the mounting holes, so the design intent of the plates could be captured in the mounting locations. This led to several people commenting on the unusual "concise" appearance of the plates.</p>
+          <p class="block">I put rollers on the corners of the drive train so it would guide itself along the field wall. I slotted the mounting holes for the secondary scoring mechanisms through the edges of the plates so the mechanisms could be hot swapped for different alliances.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_3/dt_side.jpg" alt="Drive train side view"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_3/dt_bottom.jpg" alt="Drive train bottom view"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-2"></div>
+          </div>
+          <p class="block">Next, I designed the secondary scoring mechanisms, which were a fun challenge, because they had to fit in a very small space.</p>
+          <p class="block">For the capping mechanism, I wanted to create a gimbal with a tape measure on it. The tape measure would be driven out by a servo and grab the cap with a magnet. I didn't have space to drive the tape with a high-friction wheel, as I had done on V2, so I needed to drive the tape reel from its center. I knew this was impractical with a stock tape measure, as the internal spring would cause excess resistance, and as removing the spring would cause the tape to push radially against the case.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/ultron_3/tape_disasm.jpg" alt="Tape measure disassembly"></img>
+              </figure>
+            </div>
+            <div class="column is-hidden-touch is-8"></div>
+          </div>
+          <p class="block">To solve this problem, I made a custom 3D printed tape case and spool. The inner end of the tape was screwed onto the spool, and the spool was powered by a servo through a gear pair. The tape was surrounded with tiny radial bearings, so it could press against the outside and extend smoothly. I made the pitch axis coaxial with the spool and powered it with another servo and gear pair. I powered yaw by mounting the assembly directly on a third servo.
+          <div class="columns">
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/ultron_3/tape_2.jpg" alt="Tape measure assembly"></img>
+              </figure>
+            </div>
+            <div class="column is-5">
+              <figure class="image">
+                <img src="assets/ultron_3/tape_4.jpg" alt="Tape measure assembly"></img>
+              </figure>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/ultron_3/tape_1.jpg" alt="Tape measure assembly"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">For the turntable mechanism, I created a spring-loaded flexible arm with a high friction wheel on it, so the robot could spin the turntable without reaching a precise position on the field. I made the arm from polycarbonate for extra compliance. I used 6V continuous rotation servos, as we had reached our limit for 12V motors, and as electronics rules prevented us from adapting 6V motors to servo ports. With the largest wheel I could fit in my space allocation, I needed a 1:4 overdrive to achieve my target turntable speed.</p>
+          <div class="columns">
+            <div class="column is-2">
+              <figure class="image">
+                <img src="assets/ultron_3/spinner_3.jpg" alt="Turntable spinner assembly"></img>
+              </figure>
+            </div>
+            <div class="column is-2">
+              <figure class="image">
+                <img src="assets/ultron_3/spinner_1.jpg" alt="Turntable spinner assembly"></img>
+              </figure>
+            </div>
+            <div class="column is-4">
+              <figure class="image">
+                <img src="assets/ultron_3/spinner_2.jpg" alt="Turntable spinner assembly"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">The turntable and cap mechanisms could be hot swapped in under 5 minutes, which helped us complete their corresponding tasks on either side of the symmetrical field.</p>
+          <p class="block">I also assisted in ideation for the deposit. One of my teammates designed a linear actuator rigged with a timing belt and pulleys to power extension and retraction. They wanted the extension to be powered coaxially through the pivot axis to move the mass of the motors off the pivot. However, their belt was running perpendicular to the pivot axis, and they didn't want another power transmission stage to rotate the axis. I saw a timing belt in a vending machine at school that was twisted 90 degrees, and I suggested they apply this design to the actuator. This improved the efficiency, compactness, and weight of the extension powertrain.</p>
+          <div class="columns">
+            <div class="column is-6">
+              <figure class="image">
+                <img src="assets/ultron_3/vending_machine.jpg" alt="Twisted belt in vending machine"></img>
+              </figure>
+            </div>
+            <div class="column is-3">
+              <figure class="image">
+                <img src="assets/ultron_3/twisted_belt_1.jpg" alt="Twisted belt"></img>
+              </figure>
+            </div>
+            <div class="column is-2">
+              <figure class="image">
+                <img src="assets/ultron_3/twisted_belt_2.jpg" alt="Twisted belt"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="title">Takeaways</p>
+          <p class="block">Ultron V3 achieved its goal by ranking #28/80 and being the 4th team selected at the <span class="is-italic">FIRST</span> World Championship. It played and lost in elimination rounds against the #1 and #3 ranked teams in the world. The team that selected us cited our high performance in secondary scoring tasks as their main motivation. Ultron V3 also achieved its reliability goals over V2, as the transfer had a 100% success rate, and the belt driven slides didn't break.</p>
+          <p class="block">The main issue with the robot was its inconsistency in navigating the field during the autonomous period of each match. We sought to improve in this regard for <a class="js-modal-changer" data-target="vision-2">our 2023 robot</a> by using unpowered wheels and rotary encoders to track each axis of motion while driving.</p>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <script src="modal-listen.js"></script>
   <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.7.0.slim.min.js"

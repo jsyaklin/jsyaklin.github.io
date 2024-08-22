@@ -1,6 +1,7 @@
 .modal {
     --bulma-modal-content-width: 85%;
 }
+
 .is-shady {
     animation: flyintoright .4s backwards;
     /* color, offset right, offset down, blur radius, thicken radius */
