@@ -251,7 +251,7 @@
             <div class="column is-3 is-hidden-touch"></div>
           </div>
           <p class="title">Electrical Design</p>
-          <p class="block">As a learning objective, I wanted to make a PCB to expand the functionality of the off-the-shelf receiver I was using. With guidance from Aidan Yaklin, an electrical and computer engineering student, I created a schematic for the board in KiCad. I had several ATmega328PB chips on hand, and he challenged me to include enough features to use all 27 I/O pins. I sourced components based on known parameters like motor current limits and electrical characteristics of the ATmega328PB.</p>
+          <p class="block">As a learning project, I wanted to make a PCB to expand the functionality of the off-the-shelf receiver I was using. With guidance from Aidan Yaklin, an electrical and computer engineering student, I created a schematic for the board in KiCad. I had several ATmega328PB chips on hand, and he challenged me to include enough features to use all 27 I/O pins. I sourced components for each feature I wanted based on known parameters like motor current limits and electrical characteristics of the microcontroller.</p>
           <div class="columns">
             <div class="column">
               <figure class="image">
@@ -269,7 +269,7 @@
             </div>
             <div class="column is-3 is-hidden-touch"></div>
           </div>
-          <p class="block">Next, I arranged the components on the board and routed all the connections. I used the manufacturer recommended minimums for most dimensional quantities such as trace widths, as I needed the board to be very small. I used the small traces for signal connections and much wider traces for most of the power connections. I mostly wasn't concerned with trace widths, as none of my traces were long enough to have significant resistance.</p>
+          <p class="block">Next, I arranged the components on the board and routed all the connections. I used the manufacturer recommended minimums for most dimensional quantities such as trace widths, as I needed the board to be very small. I used the small traces for signal connections and much wider traces for most of the power connections.</p>
           <div class="columns">
             <div class="column">
               <figure class="image">
@@ -287,7 +287,7 @@
             </div>
             <div class="column is-3 is-hidden-touch"></div>
           </div>
-          <p class="block">Next, I assembled the board. This was a good test of my soldering skills, as there were so many small components. On my first attempt, I reversed the polarity of the battery connector on install, as I had labeled it incorrectly in the PCB design, and blew out the microcontroller. I tried removing the microcontroller by gently breaking its legs, but I ultimately ripped one of its pads out of the PCB, so I had to redo the entire assembly on one of my spare boards. This gave me an opportunity to make some improvements, like replacing the direct connections to the brushed motors with pin headers.</p>
+          <p class="block">Next, I assembled the board. This was a good test of my soldering skills, as there were so many small components. On my first attempt, I reversed the polarity of the battery connector on install, as I had labeled it incorrectly in the PCB design, and blew out the microcontroller. I tried removing the microcontroller by gently breaking its legs, but I ultimately pulled one of its pads out of the PCB, so I had to redo the assembly on one of my spare boards. This gave me an opportunity to make some improvements, like replacing the direct connections to the brushed motors with pin headers.</p>
           <div class="columns">
             <div class="column is-5">
               <figure class="image">
@@ -312,7 +312,7 @@
             <li>Enable driving while inverted</li>
           </ul>
           <p class="block">To achieve a large weapon perimeter without gyroscopic forces, I made two counter-rotating rollers. To reduce cost and weight, I drove both rollers with a single motor. I used a branded silicone wristband from a <span class="is-italic">FIRST</span> Tech Challenge team to friction drive the second roller, as it was the right size, and I had a lot of extra wristbands if it were to break. I received permission from the team to use their brand on my robot.</p>
-          <p class="block">To achieve increased wheel traction, I made the robot as close to the 1lb weight limit as possible, and I put magnets extracted from old hard drives on the top and bottom, so the robot attracts to the steel floor.</p>
+          <p class="block">To achieve increased wheel traction, I made the robot as close to the 1lb weight limit as possible. At first, I put hard drive magnets on the frame</p>
           <p class="block">I designed the robot in PTC Onshape. I imported a CAD model of the circuit board from KiCad, so I could design the electronics enclosure around it.</p>
           <div class="columns">
             <div class="column">
@@ -322,7 +322,7 @@
             </div>
             <div class="column is-6 is-hidden-touch"></div>
           </div>
-          <p class="block">Next, I 3D printed all the parts and assembled the robot. I designed the robot to be assembled in just a few minutes, aside from the screws in the rollers, as I need to be ready to repair the robot quickly if it breaks at an event.</p>
+          <p class="block">Next, I 3D printed all the parts and assembled the robot. I made the robot so each subassembly can be replaced in less than a minute, so I can repair the robot quickly if it breaks at an event.</p>
           <p class="title">Takeaways</p>
           <p class="block">This robot is a work in progress and has yet to undergo integration testing. Every individual key function of the circuit board works. My biggest concern is friction in the weapon drive system, as it is very loud at 12000 RPM. I am also concerned that the weapon rollers will split along the 3D printed layers if impacted. To prevent this, I might try making flexible couplings to absorb impacts, testing different layer heights for better adhesion, using a "brick layer" approach to 3D printer slicing, or annealing the rollers.</p>
           <p class="block">I will update this page in coming weeks with further developments.</p>
@@ -423,8 +423,8 @@
             <div class="column is-hidden-touch"></div>
             <div class="column is-hidden-mobile"></div>
           </div> 
-          <p class="block">However, these were Poppy's only mechanical failures. A few lines of plastic on the outside of the spinner were delaminated, but the chassis, custom bearing, gears, and electronics were completely undamaged. Also, the robot effortlessly drove upside down, which was useful on several occasions.</p>
-          <p class="block">I resolved to address all of Poppy's shortcomings with <a class="js-modal-changer" data-target="ghosts">a new robot for 2024.</a> The new robot had 2 counter-rotating weapons to cancel gyroscopic forces, a custom programmable PCB to provide a slew of performance and quality of life improvements, magnets to increase traction, and superglued wheel treads.</p>
+          <p class="block">The chassis, custom bearing, gears, and electronics were completely undamaged. Also, the robot effortlessly drove upside down, which was useful on several occasions.</p>
+          <p class="block">I resolved to address all of Poppy's shortcomings with <a class="js-modal-changer" data-target="ghosts">a new robot for 2024.</a> The new robot had 2 counter-rotating weapons to cancel gyroscopic forces, a custom programmable PCB to provide a slew of performance and quality of life improvements, and reinforced wheel treads.</p>
         </div>
       </div>
     </div>
