@@ -1,3 +1,15 @@
+/* @media (prefers-color-scheme: dark) {
+    .button {
+        --bulma-button-background-l: var(--bulma-dark-l) !important;
+    }
+    .tag {
+        --bulma-tag-h: var(--bulma-dark-h);
+        --bulma-tag-s: var(--bulma-dark-s);
+        --bulma-tag-l: var(--bulma-dark-l);
+    }
+} */
+  
+
 .modal {
     --bulma-modal-content-width: 85%;
 }
