@@ -25,6 +25,10 @@
     box-shadow: rgba(0, 0, 0, .06) 0px 5px 9px 5px, 0 6px 8px 4px rgba(0, 0, 0, .1);
 }
 
+.card {
+    overflow: hidden
+}
+
 li {
     list-style-type: disc;
     list-style-position: inside;
