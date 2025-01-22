@@ -15,4 +15,4 @@ function updateTimer()
 
     yearsField.innerHTML = years.toString();
 }
-setInterval(updateTimer, 1000);
+updateTimer();
