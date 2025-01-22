@@ -235,7 +235,7 @@
         </header>
         <div class="card-content">
           <p class="title">Overview</p>
-          <p class="block">Ghost is an antweight (&lt;1lb) combat robot that is to compete at Robobrawl Fall 2024 Robot Day at the University of Illinois Urbana-Champaign. As per competition rules, it is entirely 3D printed. It features two counter-rotating spinners driven by a single brushless motor. It has a custom PCB with an ATmega328PB microprocessor. The PCB includes motor controllers, an accelerometer, a 7 segment display, an SD card slot, and an array of voltage dividers for reading the battery level and 12V receiver outputs as 5V signals.</p>
+          <p class="block">Ghost is an antweight (&lt;1lb) combat robot that competed at Robobrawl Fall 2024 Robot Day at the University of Illinois Urbana-Champaign. As per competition rules, it is entirely 3D printed. It features two counter-rotating spinners driven by a single brushless motor. It has a custom PCB with an ATmega328PB microprocessor. The PCB includes motor controllers, an accelerometer, a 7 segment display, an SD card slot, and an array of voltage dividers for reading the battery level and 12V receiver outputs as 5V signals.</p>
           <p class="block">I was responsible for all the design, assembly, wiring, testing, and iterating for this project. This was my first time designing a circuit board, and my first time programming an embedded system.</p>
           <div class="columns">
             <div class="column">
@@ -322,10 +322,10 @@
             </div>
             <div class="column is-6 is-hidden-touch"></div>
           </div>
-          <p class="block">Next, I 3D printed all the parts and assembled the robot. I made the robot so each subassembly can be replaced in less than a minute, so I can repair the robot quickly if it breaks at an event.</p>
+          <p class="block">Next, I 3D printed all the parts and assembled the robot. I made the robot so each subassembly could be replaced in less than a minute, so I could repair the robot quickly.</p>
           <p class="title">Takeaways</p>
-          <p class="block">This robot is a work in progress and has yet to undergo integration testing. Every individual key function of the circuit board works. My biggest concern is friction in the weapon drive system, as it is very loud at 12000 RPM. I am also concerned that the weapon rollers will split along the 3D printed layers if impacted. To prevent this, I might try making flexible couplings to absorb impacts, testing different layer heights for better adhesion, using a "brick layer" approach to 3D printer slicing, or annealing the rollers.</p>
-          <p class="block">I will update this page in coming weeks with further developments.</p>
+          <p class="block">At Robot Day, Ghost had a record of 1 win and 1 loss. I withdrew it from competition following its loss, because the weapon drums split, and I had opted not to print spares for them. The weapon drums and frame were printed to be much less dense than the competition standard to keep the robot within the 1lb limit. For my next robot, I resolved to make a simpler design which would enable me to print a denser frame and a solid weapon.</p>
+          <p class="block">The circuit board worked flawlessly and consistently reversed the motors when it detected an inversion, enabling the robot to drive upside down with minimal driver input. However, it was difficult to use some of the connectors on the board, as the board wasn't rigidly mounted to the frame. Also, the balance connector on the battery, which was left floating in the robot's electronics enclosure, got ripped off the battery by another robot, causing a short circuit and a small fire. For my next robot, I planned to mount the board either directly to the frame or on a cushion for impact absorption. I planned to add more sensors, like motor encoders for velocity feedback control and a 6 axis IMU for heading feedback control.</p>
         </div>
       </div>
     </div>
@@ -1228,5 +1228,6 @@
   src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
   integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
   crossorigin="anonymous"></script>    <script src="../js/wild.js"></script>
+  <script src="year-counter.js"></script>
   </body>
 </html>
