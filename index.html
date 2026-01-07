@@ -48,13 +48,70 @@
       <p class="is-size-6-tablet">I am a graduate student in mechanical engineering at the University of Illinois. 
       I have spent the past <span id="years"></span> years solving various engineering problems that capture my interest. 
       My current focus areas are advanced manufacturing and sustainable energy.
-      If you are an interested employer, if you want to work together on a project, or if you want to chat, please feel free to reach out!</p>
+      If you want to chat or work together on a project, feel free to reach out!</p>
       
     </div>
   </section>
 
   <section class="section" style="--bulma-section-padding:0rem 1.5rem; --bulma-section-padding-desktop:0rem 3rem;">
     <div class="container">
+      <div class="columns features is-multiline is-centered">
+        <div class="column is-one-third">
+          <div class="card js-modal-trigger is-shady" data-target="hackerfab">
+            <header class="card-header">
+              <p class="card-header-title" style="white-space:nowrap">Dry Photoresist</p>
+              <div class="tags mr-4 my-3">
+                <span class="tag is-light">2025</span>
+                <span class="tag is-light">Semiconductors</span>
+                <span class="tag is-light">Lithography</span>
+              </div>
+            </header>
+            <div class="card-content px-3 py-2">
+              <figure class="image">
+                <img src="assets/hackerfab/wafer1.jpg" alt="Dry film photoresist on a silicon wafer"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="card js-modal-trigger is-shady" data-target="me447">
+            <header class="card-header">
+              <p class="card-header-title" style="white-space:nowrap">Key Flexure</p>
+              <div class="tags mr-4 my-3">
+                <span class="tag is-light">2025</span>
+                <span class="tag is-light">Python</span>
+                <span class="tag is-light">Optimization</span>
+                <span class="tag is-light">Mechanical</span>
+              </div>
+            </header>
+            <div class="card-content px-2 py-3">
+              <figure class="image">
+                <img src="assets/me447/flexible_switch.jpg" alt="Flexible switch 3D model"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="column is-one-third">
+          <div class="card js-modal-trigger is-shady" data-target="me498">
+            <header class="card-header">
+              <p class="card-header-title" style="white-space:nowrap">Solar Desalination</p>
+              <div class="tags mr-4 my-3">
+                <span class="tag is-light">2025</span>
+                <span class="tag is-light">Python</span>
+                <span class="tag is-light">Materials</span>
+                <span class="tag is-light">Optics</span>
+                <span class="tag is-light">Heat Transfer</span>
+                <span class="tag is-light">Sustainable Energy</span>
+              </div>
+            </header>
+            <div class="card-content py-2 px-1">
+              <figure class="image">
+                <img src="assets/me498/mirror.jpg" alt="Dielectric mirror coating"/>
+              </figure>
+            </div>
+          </div>
+        </div> -->
+      </div>
       <div class="columns features is-multiline is-centered">
         <div class="column is-one-third">
           <div class="card js-modal-trigger is-shady" data-target="ghosts">
@@ -230,6 +287,220 @@
       </div>
     </div>
   </section>
+
+  <div id="hackerfab" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Dry Photoresist</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">HackerFab is a student-led project founded at Carnegie Mellon University and hosted by several universities around the world. The goals of HackerFab are to make integrated circuit prototyping as fast as 3D printing and to make DIY versions of most nanofabrication tools with collaborative, open-source hardware.</p>
+          <p class="block">As of 2026, the HackerFab tool development team at the University of Illinois Urbana-Champaign is solely focused on a lithography stepper and track. The lithography stepper is essentially the same as the design used at Carnegie Mellon: it uses a stripped-down projector, a 410nm UV LED, and a microscope objective lens to project features on the order of a few micrometers onto 50mm silicon wafers. A small XYZ stage interfaces with stepper motors to translate the wafer and focus the image.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-3">
+                <img src="assets/hackerfab/stepper.jpg" alt="UIUC lithography stepper components"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/hackerfab/xyz2.jpg" alt="XYZ stage with stepper motor"></img>
+              </figure>
+            </div>
+            <div class="column is-4 is-hidden-touch"></div>
+          </div>
+          <p class="block">The main difference between the CMU and UIUC projects is the choice of photoresist. CMU uses a spin coater to apply a smooth layer of industrial-grade liquid photoresist or consumer-grade UV-cure resin. UIUC uses a solid state (dry), light-sensitive plastic film. This type of photoresist is used for industrial and DIY printed circuit board manufacturing. It is safe, clean, and low-cost compared to wet photoresist, but it is more difficult to apply to wafers, since bubbles and wrinkles easily form under it. CMU has since abandoned it, but UIUC is attempting to address its challenges to keep its safety benefits.</p>
+          <p class="block">I performed experiments on dry film photoresist lamination, exposure to light, and development (dissolving unexposed areas of the photoresist). I found a new lamination method which we plan to use moving forward. I also assisted in ideation and design of the XYZ motion stage and structural frame for the stepper.</p>
+          <p class="title">Experiments</p>
+          <p class="block">My first experiment was to repeat the established lithography process. For this process, I taped the silicon wafer to a paper backing, stacked the film photoresist on top, and fed the stack through an office laminator. This resulted in good adhesion of the film to the wafer, but it also caused a crease in the film. I continued on by exposing the wafer to a UV image in the stepper and dissolving the remaining film in a solution of 1 part baking soda to 10 parts water.</p>
+          <p class="block">This experiment resulted in a well-adhered pattern with clean edges, except in the creased region, which was unusable. The film prior to dissolution was covered with small pockmarks and ripples visible to the naked eye. The experiment did not clearly show where these imperfections came from.</p>
+          <p class="block">Next, I researched other lamination methods to reduce creases and other imperfections. I found some PCB lamination processes work by laying the film on a water surface and lifting the substrate up under it. In theory, the film adheres to the water surface, making it flat, and the film is sucked against the substrate as water escapes or evaporates from between the two.</p>
+          <p class="block">For my next experiment, this immersion method was tested by hand in a plastic tub. The wafer was lifted by hand into the film and left to dry overnight. After two attempts, we found that it successfully prevented creases. The film still had small imperfections, which we hypothesized were trapped water or air bubbles, potentially in addition to imperfections on the stock film. We also cracked one of the fragile wafers while handling it after the immersion process. The cracks are visible as fine lines running from top to bottom near the center of the second wafer.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/hackerfab/wafer3.jpg" alt="Wafer with immersion lamination process"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/hackerfab/wafer2.jpg" alt="Second wafer with immersion lamination process"></img>
+              </figure>
+            </div>
+            <div class="column is-3 is-hidden-touch"></div>
+          </div>
+          <p class="block">Observing and taking pictures of the wafers is difficult. The wafer shows a reflection of the ceiling, and film pockmarks are only visible when they catch light. The camera in the lithography stepper itself has an optical banding artifact and requires careful manual focus pending completion of the XYZ stage with stepper motors. These challenges inspired us to explore new measurement and imaging techniques, like smartphone microscope lenses. It also inspired me to assist with the CAD model of the XYZ stage, as visualization became the main bottleneck for experiments.</p>
+          <p class="block">My final experiment was to try flattening the imperfect laminated film by putting it on a 75°C heated plate. First, I tried heating the wafer film side up. The top of the film did not reach a sufficient temperature to soften. The edges of the film, which contacted the heated plate directly, curled up, so I tried to trim the excess material off.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image">
+                <img src="assets/hackerfab/wafer4.jpg" alt="Wafer after heating"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/hackerfab/wafer5.jpg" alt="Wafer after heating and trimming"></img>
+              </figure>
+            </div>
+            <div class="column is-4 is-hidden-touch"></div>
+          </div>
+          <p class="block">Next, I placed the wafer with the film face down on the heated plate. This did not have the desired effect, because the curled edges obstructed the film from lying flat on the plate.</p>
+          <p class="title">Takeaways</p>
+          <p class="block">For the next semester, we resolved to repeat the face down heated plate experiment with a fresh laminated wafer. We planned to improve the repeatability of the immersion process by fixing the wafer in place and reducing the water level to drop the film onto the wafer. We also planned to test a bake step to accelerate the evaporation of water following the immersion process.</p>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div id="me447" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Key Flexure</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">This was my final project for ME447 Computational Design and Dynamics of Soft Systems at the University of Illinois. This is one of my favorite projects I have ever done, as it combines computational solid mechanics, artificial intelligence, and real-world applications. I also found it fun to watch simulation results of various squishy mechanisms.</p>
+          <p class="block">This mechanism is designed to be 3D printed with flexible filament and fit under each key in a digital MIDI keyboard. It is intended to imitate the action of a high-end piano keyboard, while being cheaper and easier to manufacture.</p>
+        
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-3">
+                <img src="assets/me447/flexible_switch.jpg" alt="Flexible switch mechanism"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="assets/me447/solution_plot.jpg" alt="Flexible switch mechanism as plot"></img>
+              </figure>
+            </div>
+            <div class="column is-2 is-hidden-touch"></div>
+          </div>
+          <p class="block">I used PyElastica, an open-source Python library for simulating assemblies of long, soft, slender rods, to set up a simple compliant mechanism loosely based on a compliant bistable switch. I used Covariance Matrix Adaptation Evolution Strategy (CMA-ES), an evolution-inspired numerical optimization algorithm, to optimize the geometry of the mechanism to approach a target force vs. displacement curve. I iteratively made manual adjustments to the mechanism topology and ran new optimizations to achieve the best possible design within the given deadline.</p>
+          <p class="title">Background</p>
+          <p class="block">Low-cost MIDI keyboards are designed for the simplest possible manufacturing and assembly process. Groups of 5-7 keys are grouped into a single injection-molded plastic part. A simple living hinge (flexure bearing) provides a reaction force to resist key deflection by a finger. A pair of membrane buttons under each key detects key press events and key velocity. A microcontroller measures the time delay between the two button presses to determine how hard the key was pressed.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-3">
+                <img src="assets/me447/akai.jpg" alt="Cheap MIDI keyboard mechanism"></img>
+              </figure>
+            </div>
+            <div class="column is-4 is-hidden-touch"></div>
+          </div>
+          <p class="block">Grand pianos cost over 1000x more than low-cost MIDI keyboards. They have a nonlinear force vs. displacement response, which makes them feel good to play. Mid-range digital MIDI keyboards imitate the feel of grand pianos with springs, weights, and other mechanisms. These keyboards are more optimized for cost vs. feel than grand pianos, but they are still complex to assemble and expensive compared to their low-end counterparts.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-5">
+                <img src="assets/me447/steinway.jpg" alt="Grand piano key action mechanism"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image mr-2">
+                <img src="assets/me447/yamaha.jpg" alt="Digital key action mechanism"></img>
+              </figure>
+            </div>
+            <div class="column is-1 is-hidden-touch"></div>
+          </div>
+          <p class="block">Our goal for this project was to make a mid-range key action at much lower cost with a compliant mechanism manufacturable as a single plastic part. Rather than putting a grand piano key in a universal testing machine, I found a graphic on the internet with some representative force vs. displacement curves to use as targets.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-5">
+                <img src="assets/me447/target.jpg" alt="Force vs. displacement curve for a piano key"></img>
+              </figure>
+            </div>
+            <div class="column is-2 is-hidden-touch"></div>
+          </div>
+          <p class="title">Design Process</p>
+          <p class="block">To run an optimization, I needed an optimization strategy. Covariance Matrix Adaptation Evolution Strategy (CMA-ES) is well-suited to this kind of problem, because it can take a landscape with a lot of variables and adapt a covariance matrix to avoid changes irrelevant to improving the solution. Each iteration, it samples sets of candidate variables from a multi-variable normal distribution, evaluates the fitness of each set, and makes a new normal distribution discounting old and unfit candidate solutions. The following figure shows CMA-ES navigating a simple 2D (2 design variables) landscape.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-5">
+                <img src="assets/me447/cma.jpg" alt="CMA-ES"></img>
+              </figure>
+            </div>
+            <div class="column is-4 is-hidden-touch"></div>
+          </div>
+          <p class="block">I also needed an initial mechanism topology. I made a structure with three rods, each with one end fixed. It was simple enough to simulate fast on a laptop, while also allowing for a good variety of designs, including a simple bistable switch. I assigned the X, Y, and radius of each rod as design variables.</p>
+          <p class="block">3D printed compliant mechanisms can either have fixed or variable orientation boundary conditions. I switched between boundary condition types a few times during the design process. I ultimately chose variable orientation boundary conditions, as they are slightly more predictable. This is not apparent in the CAD model, which is a simplified representation of the final design.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-5">
+                <img src="assets/me447/topology.jpg" alt="Rod topology concept"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image mr-5">
+                <img src="assets/me447/freebc.jpg" alt="Free boundary condition"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image mr-5">
+                <img src="assets/me447/fixedbc.jpg" alt="Fixed boundary condition"></img>
+              </figure>
+            </div>
+          </div>
+          <p class="block">Since PyElastica normally takes user-defined external forces and calculates resulting deformations, I implemented a proportional-integral controller to adjust the force to reach a user-defined steady-state deformation. I incremented the target deformation slowly to achieve a quasi-static force vs. deformation curve.</p>
+          <p class="block">For the optimization fitness function, I found the absolute area between the current and target force vs. deformation curves.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-5">
+                <img src="assets/me447/fitness.jpg" alt="Optimization fitness"></img>
+              </figure>
+            </div>
+            <div class="column is-6 is-hidden-touch"></div>
+          </div>
+          <p class="block">The following shows the force response of the initial setup, the force response of the final design, and the progression of the design,.</p>
+          <div class="columns">
+            <div class="column">
+              <figure class="image mr-5">
+                <img src="assets/me447/fitness_initial.jpg" alt="Initial force curve"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image mr-5">
+                <img src="assets/me447/fitness_final.jpg" alt="Final force curve"></img>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image is-5by4">
+                <iframe class="has-ratio" src="https://www.youtube.com/embed/IybBo4Wi3Cc?rel=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </figure>
+            </div>
+          </div>
+          <p class="title">Takeaways</p>
+          <p class="block">Although we did not achieve an optimal solution, we achieved most of our qualitative force goals. The mechanism is preloaded by the key, ensuring it always returns to its top position when released. The force gradually increases to a peak, giving the user haptic feedback as they press the key. The force drops when the key is pressed all the way down, reducing strain on the user's fingers for sustained notes. The force range is on the order of 0.5-1N, which matches the 50-100g range for the target. The reaction force on the user's finger can also be scaled by changing the distance between the mechanism and the pivot point of the key, or by changing the material properties.</p>
+          <p class="block">The material properties in the simulation were adjusted to somewhat unrealistic values to ensure simulation stability. The sharp inflection points in the target force curve were not achieved. These issues could be addressed with a longer optimization and a shorter time step. Flexible rods that intermittently contact the mechanism and buckle under load, like the one in the final concept, were found to have a promising force response. If we could shrink and soften the buckling rod so it undergoes much larger deformation relative to its length, we would get a sharper force peak and fall off. However, this causes the simulation to become unstable, perhaps due to the rapid change in system rigidity when the rod buckles. A shorter time step was found to be a reliable way to increase simulation stability, at the expense of simulation speed.</p>
+          <p class="block">In the future, I would love to see extended simulations, real-world tests with a universal testing machine, and expansion of this open-source inverse design approach to other compliant mechanisms, like computer key switches.</p>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <!-- <div id="me498" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Solar Desalination</p>
+        </header>
+        <div class="card-content">
+          <p class="title">Overview</p>
+          <p class="block">This was my final project for ME498 Nanomanufacturing for Sustainable Energy at the University of Illinois. We were tasked with making a novel, cost-effective device that traps solar heat to evaporate and purify seawater.</p>
+          <p class="block">While my teammates worked on the mechanical design for the device, I developed a transparent film material that transmits solar UV and visible irradiation while reflecting IR blackbody emissions from inside the device.</p>
+          <p class="title">Takeaways</p>
+          <p class="block">My approach to determining the optimal process for manufacturing the dielectric coatings was to find research papers on dielectric material sputtering that happened to list optical properties and find the paper with the closest listing to the target properties. Later, I took a class on plasma in manufacturing and learned my findings were somewhat naive. There are many considerations with plasma sputtering I didn't account for, like uniformity across the large film. Determining the best equipment, process parameters, and post-processing steps for such an unusual material would likely merit months or years of hands-on research.</p>
+          <p class="block">I revisited this project a few months after its conclusion to see if I should try commercializing it. I was curious if a simple technology like this could compete with industrial desalination facilities, which have moderate operating costs from filters that degrade over time. I calculated that it would need an increase in water output per dollar on the order of 100 to 1000. Nonetheless, it may be useful when coupled with other recent improvements to solar desalination, like <a href="https://doi.org/10.1016/j.joule.2023.08.012">MIT's thermohaline convection research</a>, in niche operating conditions. Also, it was a fun engineering exercise, and it inspired me to study more about plasma manufacturing processes, optics, heat transfer, and electromagnetic waves.</p>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div> -->
 
   <div id="ghosts" class="modal modal-fx-fadeInScale">
     <div class="modal-background"></div>
