@@ -381,7 +381,7 @@
             </div>
             <div class="column is-2 is-hidden-touch"></div>
           </div>
-          <p class="block">I used PyElastica, an open-source Python library for simulating assemblies of long, soft, slender rods, to set up a simple compliant mechanism loosely based on a compliant bistable switch. I used Covariance Matrix Adaptation Evolution Strategy (CMA-ES), an evolution-inspired numerical optimization algorithm, to optimize the geometry of the mechanism to approach a target force vs. displacement curve. I iteratively made manual adjustments to the mechanism topology and ran new optimizations to achieve the best possible design within the given deadline.</p>
+          <p class="block">I used PyElastica, an open-source Python library for simulating assemblies of long, soft, slender rods, to set up a simple compliant mechanism loosely based on a compliant bistable switch. I used Covariance Matrix Adaptation Evolution Strategy (CMA-ES), an evolution-inspired numerical optimization algorithm, to optimize the geometry of the mechanism to approach a target force vs. displacement curve. I iteratively made manual adjustments to the mechanism topology and ran new optimizations to achieve the best possible design within the given deadline. The program simulated over 1000 candidate solutions to reach its final design.</p>
           <p class="title">Background</p>
           <p class="block">Low-cost MIDI keyboards are designed for the simplest possible manufacturing and assembly process. Groups of 5-7 keys are grouped into a single injection-molded plastic part. A simple living hinge (flexure bearing) provides a reaction force to resist key deflection by a finger. A pair of membrane buttons under each key detects key press events and key velocity. A microcontroller measures the time delay between the two button presses to determine how hard the key was pressed.</p>
           <div class="columns">
@@ -454,6 +454,7 @@
             </div>
             <div class="column is-6 is-hidden-touch"></div>
           </div>
+          <p class="block">My early optimizer tests were slow, as the candidate solutions given by CMA-ES per iteration were evaluated one at a time. All the vector calculations for PyElastica were written with the Numba accelerator library, leaving little room for performance improvement in the simulation itself. I noticed the program was using a small percentage of my CPU. I put the fitness function evaluation in a parallel process with the Python multiprocessing library, and I gave each process its own temporary working directory. This made the same optimization run 5x faster.</p>
           <p class="block">The following shows the force response of the initial setup, the force response of the final design, and the progression of the design,.</p>
           <div class="columns">
             <div class="column">
